@@ -10,9 +10,24 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	$('a').click(anagrammedName($(this).text())
+			$(this).text().preventDefault();
+
+		);
 }
 
+
+// funciton myListener($(this).text()) {
+// 	this.preventDefault();
+// 	name = $(this).text();
+// 	this.anagrammedName(name);
+// }
+
+
+
 function anagrammedName(name) {
+	// name = $(this)
+	// this.preventDefault()
 	// Thanks, Internet Anagram Server!
 	
 	if (name == "Doug Engelbart") {
